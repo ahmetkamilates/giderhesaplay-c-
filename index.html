@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gider hesaplayıcı</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Gider Tablosu</h1>
+
+    <div class="container">
+        <h3 class="greet">
+            Hoşgeldin,
+            <input type="text" id="user-input" placeholder="input">
+        </h3>
+        <form action="">
+            <div class="double">
+                <div class="form-field">
+                    <label for="name-input">Urun adi</label>
+                    <input type="text" id="name-input">
+                </div>
+                <div class="form-field">
+                    <label for="price-input">Fiyat</label>
+                    <input type="number" id="price-input">
+                </div>
+            </div>
+            <div class="double">
+                <div class="form-check-field">
+                    <input id="status-check" type="checkbox">
+                    <label for="status-check">Ödendi</label>
+                </div>
+                <button id="add-btn">Ekle</button>
+            </div>
+        </form>
+        <div class="sum">
+            Toplam Harcama <span id="sum-info"></span> $
+        </div>
+            <select name="" id="select">
+                <option value="all">Hepsi</option>
+                <option value="paid">Ödendi</option>
+                <option value="not-paid">Ödenmedi</option>
+
+            </select>
+
+            <div id="list">
+                
+            </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
